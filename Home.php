@@ -7,7 +7,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link href="/View/CSS/IndexStyle.css" rel="stylesheet">
+  <link href="View/CSS/IndexStyle.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +22,9 @@
   <header>
     <div class="navMenu">
       <div class="logo">
-        <a class="navbar-brand" href="#">
-          <img class="logo" src="/View/IMG/book-half.svg" alt="Logo de Biblioteca Inteligente">
-          System Lybrary
+        <a class="navbar-brand" href="#"><
+          <img class="logo" src="View/IMG/book-half.svg" alt="Logo de Biblioteca Inteligente">
+          System Library
         </a>
       </div>
   
@@ -32,10 +32,10 @@
         <nav>
           
           <div class="list-group" id="myList" role="tablist">
-            <a class="list-group-item list-group-item-action " href="/Biblioteca_Control/login.php" role="tab">Iniciar sesión</a>
+            <a class="list-group-item list-group-item-action " href="/SystemLybrary/login.php" role="tab">Iniciar sesión</a>
             <a class="list-group-item list-group-item-action"  href="#profile" role="tab">Conócenos</a>
             <a class="list-group-item list-group-item-action"  href="#messages" role="tab">Novedades</a>
-            <a class="list-group-item list-group-item-action active"  href="#settings" role="tab">Home</a>
+            <a class="list-group-item list-group-item-action active"  href="/SystemLybrary/templates/Libros/ListaLibros.php" role="tab">Home</a>
           </div>
           
         </nav>
@@ -45,13 +45,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav">
-              <a class="nav-item nav-link" data-toggle="list" href="/Biblioteca_Control/login.php" role="tab">Iniciar sesión</a>
+              <a class="nav-item nav-link" data-toggle="list" href="/SystemLybrary/login.php" role="tab">Iniciar sesión</a>
               <a class="nav-item nav-link" data-toggle="list" href="#profile" role="tab">Conócenos</a>
               <a class="nav-item nav-link" data-toggle="list" href="#messages" role="tab">Novedades</a>
-              <a class="nav-item nav-link active" data-toggle="list" href="#settings" role="tab">Home</a>
+              <a class="nav-item nav-link active" data-toggle="list" href="/SystemLybrary/templates/Libros/ListaLibros.php" role="tab">Home</a>
             </div>
           </div>
-        </nav>
         </nav>
   
       </div>
@@ -59,7 +58,7 @@
     <div class="ilustracionContededor">
 
       <div class="ilustarcion">
-        <img class="ilustarcionIMG" src="/View/IMG/mejores-libros-educativos-2021-1.jpg" alt="ilustarcion de libros">
+        <img class="ilustarcionIMG" src="View/IMG/mejores-libros-educativos-2021-1.jpg" alt="ilustarcion de libros">
       </div>
 
       <div class="ilustarciontxt">
