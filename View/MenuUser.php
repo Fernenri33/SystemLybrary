@@ -30,16 +30,10 @@
       <a class="nav-link" href="#">Préstamos</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Administración de suarios</a>
+      <a class="nav-link" href="#">Perfil de usuario</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Recursos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Reportes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Perfil de usuario</a>
     </li>
   </ul>
 </div>

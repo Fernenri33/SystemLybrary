@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .contenedorMenu {
+    padding: 5px;
+    background-color: #153d4e;
+    width: 15%; /* Cambia este valor para ajustar el ancho */
+    height: 100%; /* Asegúrate de que el menú ocupe toda la altura */
+  }
+  
+  a {
+    color: white !important;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  h4 {
+    color: white !important;
+  }
+  
+  

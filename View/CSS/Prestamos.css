@@ -1,0 +1,21 @@
+.Contededortablas {
+    width: 100%;
+    padding: 20px;
+    padding-left: 30px;
+  }
+  .table {
+    table-layout: fixed;
+    width: 95%;
+  }
+  .table th, .table td {
+    text-align: left;
+  }
+  .table th:nth-child(1), .table td:nth-child(1) { width: 10%; }
+  .table th:nth-child(2), .table td:nth-child(2) { width: 30%; }
+  .table th:nth-child(3), .table td:nth-child(3) { width: 20%; }
+  .table th:nth-child(4), .table td:nth-child(4) { width: 20%; }
+  .table th:nth-child(4), .table td:nth-child(5) { width: 20%; }
+
+  .table th:nth-child(3), .table td:nth-child(3) {
+   text-align: center;
+}

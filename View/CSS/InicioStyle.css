@@ -1,0 +1,9 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+  }
+.contenido{
+    width: 85%;
+}
