@@ -17,26 +17,37 @@
 <body>
 
 <div class="contenedorMenu">
-  <br>
-  <h4>System Library</h4><br>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Dashboard</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Peticiones</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Préstamos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Perfil de usuario</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Recursos</a>
-    </li>
-  </ul>
+    <br>
+    <h4>System Library</h4><br>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="inicio.php?opcion=inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Peticiones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Préstamos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Perfil de usuario</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="inicio.php?opcion=cubGrupales">Cubículos Grupales</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="inicio.php?opcion=computadoras">Computadoras</a>
+        </li>
+    </ul>
 </div>
-  
+
+
+
+<!-- Asegúrate de incluir los archivos JavaScript y CSS de Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

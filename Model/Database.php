@@ -4,7 +4,7 @@ class Database {
   // Declara las propiedades privadas para los detalles de la base de datos
   private $servername = "localhost";
   private $username = "root";
-  private $password = "22067000";
+  private $password = "";
   private $dbname = "system_lybrary";
   // Declara la propiedad pública para la conexión a la base de datos
   public $conn;
