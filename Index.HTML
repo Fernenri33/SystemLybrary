@@ -32,9 +32,9 @@
         <nav>
           
           <div class="list-group" id="myList" role="tablist">
-            <a class="list-group-item list-group-item-action " href="../SystemLybrary/login.html" role="tab">Iniciar sesión</a>
+            <a class="list-group-item list-group-item-action " href="../SystemLybrary/login.php" role="tab">Iniciar sesión</a>
             <a class="list-group-item list-group-item-action"  href="#profile" role="tab">Conócenos</a>
-            <a class="list-group-item list-group-item-action"  href="#messages" role="tab">Novedades</a>
+            <a class="list-group-item list-group-item-action"  href="#novedades" role="tab">Novedades</a>
             <a class="list-group-item list-group-item-action active"  href="#settings" role="tab">Home</a>
           </div>
           
@@ -45,10 +45,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav">
-              <a class="nav-item nav-link" data-toggle="list" href="../SystemLybrary/login.html" role="tab">Iniciar sesión</a>
-              <a class="nav-item nav-link" data-toggle="list" href="#profile" role="tab">Conócenos</a>
-              <a class="nav-item nav-link" data-toggle="list" href="#messages" role="tab">Novedades</a>
-              <a class="nav-item nav-link active" data-toggle="list" href="#settings" role="tab">Home</a>
+              <a class="list-group-item list-group-item-action" href="../SystemLybrary/login.php" role="tab">Iniciar sesión</a>
+              <a class="list-group-item list-group-item-action" href="#profile" role="tab">Conócenos</a>
+              <a class="list-group-item list-group-item-action" href="#messages" role="tab">Novedades</a>
+              <a class="list-group-item list-group-item-action active" href="#settings" role="tab">Home</a>
             </div>
           </div>
         </nav>
@@ -65,17 +65,20 @@
       <div class="ilustarciontxt">
         <h1 class="textoPrincipal">Más que lectura, una experiencia.</h1>
         <br>
-        <button type="button" class="btn btn-info">Conoce más</button>
-        <button type="button" class="btn btn-light">Registrarme</button>
+        <a href="#novedades" class="btn btn-info">Conoce más</a>
+        <a href="../SystemLybrary/login.php" class="btn btn-light">Registrarme</a>
       </div>
 
     </div>
   </header>
-  <main>
 
+  <div id="novedades">
+    
+  <main>
     <div class="textDiv">
       <h1>Ya Puedes Reservar Cualquier Recurso</h1><br>
     </div>
+
     <div class="contentDiv">
       <div class="parrafo">
 
@@ -93,20 +96,22 @@
     <div class="textDiv">
       <h1>¿Qué Hay De Nuevo?</h1><br>
     </div>
+
     <div class="contentDiv">
       <div class="parrafo">
 
         <span>
-          Olvida las largas esperas. Nuestro sistema de ingreso inteligente agiliza tu acceso a la biblioteca, permitiéndote disfrutar de una experiencia fluida y sin contratiempos desde el momento en que llegas. Hemos implementado tecnología de vanguardia para gestionar y optimizar el flujo de visitantes, lo que significa que no tendrás que preocuparte por perder tiempo en filas interminables.
-          Nuestro sistema utiliza identificación digital rápida y eficiente, lo que reduce significativamente el tiempo de espera y mejora la precisión en el control de acceso. Además, con el uso de aplicaciones móviles y kioscos de autoservicio, puedes gestionar tu ingreso de manera autónoma, reservando tu visita con antelación o registrándote rápidamente al llegar.
+          "Déjate sorprender por nuestra biblioteca. Con nuestro sistema de acceso ágil y eficiente, cada visita se convierte en una experiencia sin igual. Hemos integrado tecnología de punta para agilizar el ingreso, asegurando que tu tiempo se dedique a lo que realmente importa: explorar nuestro extenso catálogo y sumergirte en el mundo de la lectura.
+
+Nuestra plataforma de identificación digital te permite entrar rápidamente, evitando las largas esperas y garantizando un control de acceso preciso. Además, gracias a nuestras aplicaciones móviles y kioscos de autoservicio, tienes el control total sobre tu visita. Ya sea reservando tus libros favoritos con anticipación o registrándote al instante al llegar, en nuestra biblioteca, la tecnología trabaja para ti.
+
+Así que olvídate de las filas interminables y las esperas tediosas. En nuestra biblioteca, cada momento cuenta, y estamos aquí para hacer que cada visita sea memorable."
         </span>
         <br><br>
-        <span>
-          Esta innovación no solo mejora la eficiencia, sino que también se adapta a las necesidades de todos nuestros usuarios, incluyendo personas mayores y niños, proporcionando una interfaz fácil de usar y accesible para todos. Al minimizar las demoras en el ingreso, podrás dedicar más tiempo a explorar nuestros vastos recursos, asistir a actividades y disfrutar de todo lo que la biblioteca tiene para ofrecer.
-        </span>
+      
       </div>
     </div>
-
+    <div id="profile">
     <div class="textDiv">
       <h1>Sobre nosotros</h1><br>
     </div>
@@ -114,26 +119,51 @@
       <div class="parrafo">
 
         <span>
-          Olvida las largas esperas. Nuestro sistema de ingreso inteligente agiliza tu acceso a la biblioteca, permitiéndote disfrutar de una experiencia fluida y sin contratiempos desde el momento en que llegas. Hemos implementado tecnología de vanguardia para gestionar y optimizar el flujo de visitantes, lo que significa que no tendrás que preocuparte por perder tiempo en filas interminables.
-          Nuestro sistema utiliza identificación digital rápida y eficiente, lo que reduce significativamente el tiempo de espera y mejora la precisión en el control de acceso. Además, con el uso de aplicaciones móviles y kioscos de autoservicio, puedes gestionar tu ingreso de manera autónoma, reservando tu visita con antelación o registrándote rápidamente al llegar.
+          Había una vez una pequeña biblioteca en el corazón de un pintoresco pueblo. Aunque modesta en tamaño, esta biblioteca era un verdadero tesoro para la comunidad local. Desde niños hasta ancianos, todos encontraban en sus estantes algo que los cautivaba y los transportaba a mundos desconocidos.
+
+La biblioteca era más que un simple edificio de libros; era un refugio para los soñadores, un santuario para los curiosos y un faro de conocimiento para los buscadores ávidos de aprender. Cada día, sus puertas se abrían para dar la bienvenida a aquellos que buscaban refugio del bullicio del mundo exterior, permitiéndoles sumergirse en historias fascinantes, explorar nuevos horizontes y descubrir mundos imaginarios.
+
+Los niños correteaban entre los pasillos, con ojos llenos de asombro al encontrar libros sobre dragones, piratas y princesas valientes. Los estudiantes venían a estudiar en silencio, rodeados del suave murmullo de las páginas que se pasaban y el crujido de las hojas mientras se tomaban notas. Los ancianos se sentaban en los cómodos sillones, perdiéndose en las páginas de libros que les recordaban tiempos pasados y les enseñaban lecciones para el futuro.
+
+Cada libro en esa biblioteca tenía una historia propia, pero también formaba parte de una historia más grande: la historia de la comunidad que lo frecuentaba. A través de sus páginas, se tejían lazos de amistad, se compartían ideas y se creaban recuerdos que perdurarían mucho más allá de las páginas impresas.
+
+Y así, la pequeña biblioteca seguía siendo un faro de luz en la vida de aquellos que la visitaban, recordándoles que, en un mundo lleno de caos y cambio, siempre habría un lugar donde encontrar consuelo, inspiración y la promesa de nuevas aventuras entre sus estantes llenos de libros.
         </span>
         <br><br>
-        <span>
-          Esta innovación no solo mejora la eficiencia, sino que también se adapta a las necesidades de todos nuestros usuarios, incluyendo personas mayores y niños, proporcionando una interfaz fácil de usar y accesible para todos. Al minimizar las demoras en el ingreso, podrás dedicar más tiempo a explorar nuestros vastos recursos, asistir a actividades y disfrutar de todo lo que la biblioteca tiene para ofrecer.
-        </span>
       </div>
     </div>
+    <br><br>
   </main>
-  <footer>
-    <h1>
-      Footer
-    </h1>
-      <p>
 
-      </p>
-      <br><br>
-    </h1>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Contacto</h3>
+          <p>Dirección: Calle Falsa 123</p>
+          <p>Teléfono: 123-456-7890</p>
+          <p>Email: info@systemlibrary.com</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#profile">Conócenos</a></li>
+            <li><a href="#messages">Novedades</a></li>
+            <li><a href="#settings">Home</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Síguenos</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
+  
 
   <!-- Bootstrap JS y jQuery (Requiere jQuery) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

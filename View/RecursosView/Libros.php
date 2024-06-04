@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once 'C:\xampp\htdocs\SystemLybrary\Model\Libros.php';
+
+$librosObj = new Libros();
+$libros = $librosObj->getAllLibros();
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos - Computadoras</title>
+    <title>Recursos - Libros</title>
     <!-- Incluyendo Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -12,17 +17,12 @@
         text-align: center;
     }
 </style>
+
 <body>
 
     <div class="container mt-4">
-        <?php 
-            require_once 'C:\xampp\htdocs\SystemLybrary\Model\Computadoras.php';
 
-            $computadorasObj = new Computadoras();
-            $computadoras = $computadorasObj->getAllComputadoras();
-        ?>
-
-        <h2 class="mb-4">Recursos - Computadoras</h2>
+        <h2 class="mb-4">Recursos - Libros</h2>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -35,16 +35,15 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($computadoras as $computadora): ?>
+                <?php foreach ($libros as $libro): ?>
                 <tr>
-
-                    <td><?php echo $computadora['ID']; ?></td>
-                    <td><?php echo $computadora['Marca']; ?></td>
-                    <td><?php echo $computadora['Modelo']; ?></td>
-                    <td><?php echo $computadora['Cantidad_Disponible']; ?></td>
+                    <td><?php echo $libro['ID']; ?></td>
+                    <td><?php echo $libro['Titulo']; ?></td>
+                    <td><?php echo $libro['Autor']; ?></td>
+                    <td><?php echo $libro['Cantidad_Disponible']; ?></td>
                     
                     <td>
-                        <a href="SolicitudesView.php?id=<?php echo $computadora['ID']; ?>&tipo_recurso=computadoras" class="btn btn-info">Solicitar préstamo</a>
+                        <a href="SolicitudesView.php?id=<?php echo $libro['ID']; ?>&tipo_recurso=libros" class="btn btn-info">Solicitar préstamo</a>
                     </td>
                     
                 </tr>

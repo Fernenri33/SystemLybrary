@@ -36,7 +36,7 @@ class EscritorioInd{
             $recursos[] = array(
                 'ID' => $row['ID'],
                 'ID_Ubicacion' => $row['ID_Ubicacion'],
-                'Cantidad_Disponible' => $row['ID_Ubicacion'],
+                'Cantidad_Disponible' => $row['Cantidad_Disponible'],
                 'Cantidad_Prestada' => $row['Cantidad_Prestada'],
                 'Cantidad_Dañada' => $row['Cantidad_Dañada'],
                 'Cantidad_Total' => $row['Cantidad_Total']

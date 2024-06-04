@@ -1,3 +1,18 @@
+<?php
+// Incluir la clase Usuarios para obtener los datos del usuario actual
+require_once '../Model/Usuarios.php';
+
+// Verificar si hay una sesión iniciada
+// session_start();
+if (!isset($_SESSION['usuario'])) {
+    // Redireccionar al usuario a la página de inicio de sesión si no hay sesión activa
+    header("Location: http://localhost/SystemLybrary/login.php");
+    exit();
+}
+
+// Obtener el usuario de la sesión
+$usuario = $_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,10 +39,30 @@
                 case 'computadoras':
                     include '../View/RecursosView/Computadoras.php';
                     break;
-                // Agrega más casos según sea necesario para otras opciones del menú
+                    case 'ContAudiovisual':
+                        include '../View/RecursosView/ContAudiovisual.php';
+                        break;
+                    case 'EscritorioInd':
+                        include '../View/RecursosView/EsccritorioInd.php';
+                        break;
+                    case 'Libro':
+                        include '../View/RecursosView/Libros.php';
+                        break;
+                    case 'Tablet':
+                            include '../View/RecursosView/Tablets.php';
+                        break;
+                    case 'PerfilDeUsuario':
+                            include 'PerfilDeUsuario.php';
+                        break;
+                    case 'Solicitudes':
+                        include '../View/RecursosView/SolicitudesLista.php';
+                    break;
+                    case 'Prestamos':
+                        include '../View/RecursosView/PrestamosLista.php';
+                    break;
                 default:
                     // Incluir algún contenido por defecto si la opción no está definida
-                    include '../View/InicioDefault.php';
+                    include '../View/RecursosView/InicioiView.php';
                     break;
             }
         } else {

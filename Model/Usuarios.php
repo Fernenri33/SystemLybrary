@@ -2,6 +2,16 @@
 
 require_once 'Database.php';
 
+//  $usuarioBoj = new Usuarios();
+//  $usuarioBoj->logout();
+session_start(); // Iniciar la sesión al principio del script
+
+if (!isset($_SESSION['usuario'])) {
+    $usuarioBoj = new Usuarios();
+    $usuarioBoj->loginFromForm();
+}
+
+
 class Usuarios {
     public $ID;
     public $nombre;
@@ -100,13 +110,23 @@ class Usuarios {
         return $users;
     }
 
+    public function loginFromForm() {
+        // Capturar los datos del formulario
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        // Llamar al método login
+        $this->login($email, $password);
+    }
+
     public function login($email, $password) {
+        
+
         $sql = "SELECT * FROM usuarios WHERE email = ? AND password = ?";
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param('ss', $email, $password);
         $stmt->execute();
         $result = $stmt->get_result();
-
+    
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             $user = new Usuarios();
@@ -118,10 +138,33 @@ class Usuarios {
             $user->setTelefono($row['telefono']);
             $user->setCategorias($row['categoria']);
             $user->setPassword($row['password']);
-            return $user;
+
+            // Iniciar sesión y redirigir
+            session_start();
+            $_SESSION['usuario'] = $user; // Guardar el objeto usuario en la sesión
+              header("Location: http://localhost/SystemLybrary/View/inicio.php?opcion=inicio"); // Redireccionar al usuario a la página de inicio
+             exit();
         } else {
             return null; // o false si prefieres
         }
     }
+    public function logout() {
+        // Iniciar sesión si aún no está iniciada
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        
+        // Destruir todas las variables de sesión
+        $_SESSION = array();
+        
+        // Destruir la sesión
+        session_destroy();
+        
+        // Redireccionar al usuario a la página de inicio de sesión
+        header("Location: http://localhost/SystemLybrary/login.php");
+        exit();
+    }
+    
 }
+
 ?>

@@ -16,7 +16,7 @@ class ContAudioVisual{
         $this->conn->close();
     }
 
-    public function getAllTablets() {
+    public function getAllvideo() {
         
         $sql = "
         SELECT 

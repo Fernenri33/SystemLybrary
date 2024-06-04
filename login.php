@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,9 +27,9 @@
         <nav>
           <div class="list-group" id="myList" role="tablist">
             <a class="list-group-item list-group-item-action active" href="login.html" role="tab">Iniciar sesión</a>
-            <a class="list-group-item list-group-item-action" href="#profile" role="tab">Conócenos</a>
-            <a class="list-group-item list-group-item-action" href="#messages" role="tab">Novedades</a>
-            <a class="list-group-item list-group-item-action" href="#settings" role="tab">Home</a>
+            <a class="list-group-item list-group-item-action" href="http://localhost/SystemLybrary/" role="tab">Conócenos</a>
+            <a class="list-group-item list-group-item-action" href="http://localhost/SystemLybrary/" role="tab">Novedades</a>
+            <a class="list-group-item list-group-item-action" href="http://localhost/SystemLybrary/" role="tab">Home</a>
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,24 +51,24 @@
 
   <div class="formContainer">
     <div class="formulario" id="loginForm">
-        <form>
+        <form method="POST" action="../SystemLybrary/Model/Usuarios.php">
             <div class="form-group">
                 <label for="loginInputEmail1">Correo electrónico</label>
-                <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
+                <input type="email" name="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com" required>
                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos este correo con alguien más.</small>
             </div>
             <div class="form-group">
                 <label for="loginInputPassword1">Contraseña</label>
-                <input type="password" class="form-control" id="loginInputPassword1" placeholder="Contraseña">
+                <input type="password" name="password" class="form-control" id="loginInputPassword1" placeholder="Contraseña" required>
             </div>
             <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="loginCheck1">
-                <label class="form-check-label" for="loginCheck1">Recuérdame</label>
+
             </div>
             <button type="submit" class="btn btn-primary">Ingresar</button>
-            <button type="button" class="btn btn-secondary" onclick="showRegisterForm()">Crear cuenta</button>
         </form>
     </div>
+</div>
+
 
     <div class="formulario" id="registerForm" style="display: none;">
         <form>

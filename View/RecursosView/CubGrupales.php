@@ -26,7 +26,6 @@
             <thead class="thead-dark">
                 <tr>
                     <th>ID</th>
-                    <th>ID Ubicación</th>
                     <th>Capacidad</th>
                     <th>Cantidad Disponible</th>
                     <th>Solicitar</th>
@@ -36,10 +35,14 @@
                 <?php foreach ($cubiculos as $cubiculo): ?>
                 <tr>
                     <td><?php echo $cubiculo['ID']; ?></td>
-                    <td><?php echo $cubiculo['ID_Ubicacion']; ?></td>
+                    <!-- <td><?//php echo $cubiculo['ID_Ubicacion']; ?></td> -->
                     <td><?php echo $cubiculo['Capacidad']; ?></td>
                     <td><?php echo $cubiculo['Cantidad_Disponible']; ?></td>
-                    <td><button type="button" class="btn btn-info">Solicitar préstamo</button></td>
+
+                    <td>
+                        <a href="SolicitudesView.php?id=<?php echo $cubiculo['ID']; ?>&tipo_recurso=cubiculo_grupal" class="btn btn-info">Solicitar préstamo</a>
+                    </td>
+
                 </tr>
                 <?php endforeach; ?>
             </tbody>
